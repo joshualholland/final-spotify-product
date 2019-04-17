@@ -1,0 +1,44 @@
+.Login {
+  text-align: center;
+  background: linear-gradient(to bottom right,#6b5b95, black);
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+}
+
+.login-button {
+  size: 700px;
+  background: linear-gradient(to right, #10ffccff, #ff00d4ff);
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+
+#login-svg {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 13%;
+  bottom: 50%;
+  left: 33%;
+}
+
+svg #login-path {
+  stroke-dasharray:861.7877197265625px;
+  stroke-dashoffset: 861.7877197265625px;
+  animation-name: draw;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: 1; 
+  animation-timing-function: linear;
+}
+
+@keyframes draw {
+to {
+  stroke-dashoffset: 0;
+}
+}

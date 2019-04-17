@@ -1,0 +1,122 @@
+.Home {
+    background: linear-gradient(to bottom right,#6b5b95, black);
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.me {
+    float: right;
+    margin-top: 8px;
+    text-align: right;
+}
+
+.svg-top {
+    width: 100%;
+    height: 100vh;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+}
+
+.me-pic {
+    border-radius: 50%;
+    height: 4em;
+    display: inline-block;
+}
+
+.me-text {
+    text-align: right;
+}
+
+#home-logo {
+    width: 600px;
+    height: 600px;
+}
+
+.text {
+    float: right;
+}
+
+#charts-title {
+    color: #ff00d4;
+}
+
+
+footer {
+    background-color: #212529;
+    bottom: 0;
+    position: fixed;
+    height: 7em;
+    width: 100%;
+}
+
+.song-container {
+    float: left;
+}
+
+.song-img {
+    height: 75px;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.song-title {
+    color: white;
+    display: inline-block;
+}
+
+.song-artist {
+    color: white;
+}
+
+#wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+#play {
+    background-color: #212529;
+    border-style: none;
+    height: 62px;
+    width: 62px;
+}
+
+#currentTime {
+    display: 'inline-block';
+}
+
+#fullDuration {
+    display: inline-block;
+}
+
+svg #path123 {
+      stroke-dasharray: 861.7877197265625px;
+      stroke-dashoffset: 861.7877197265625px;
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-fill-mode: forwards; 
+      animation-iteration-count: 1; 
+      animation-timing-function: linear;
+    }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+#line {
+    fill: aqua !important;
+    stroke: aqua !important;
+}
+
+@media only screen and (max-width: 414px) {
+    #home-logo {
+        width: 300px !important;
+        height: auto;
+    }
+}
