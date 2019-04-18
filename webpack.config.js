@@ -20,7 +20,7 @@ const serverConfig = (env, argv) => {
         },
         {
             test: /.css?$/,
-            use: ['style-loader', 'css-loader']
+            use: ['style-loader', 'css-loader'],
         }
       ]
     },
@@ -28,7 +28,7 @@ const serverConfig = (env, argv) => {
       extensions: ['.jsx', '.js']
     },
     output: {
-      filename: 'index.js',
+      filename: 'server.js',
       path: path.resolve(__dirname, 'dist')
     },
     target: 'node',
