@@ -4,8 +4,6 @@ const cors = require('cors');
 const querystring = require('querystring');
 const cookieParser = require('cookie-parser');
 import path, { join } from 'path';
-const cluster = require('cluster');
-const numCPUs = require('os').cpus().length;
 const history = require('connect-history-api-fallback');
 
 require('dotenv').config();
