@@ -5,7 +5,7 @@ const serverConfig = (env, argv) => {
 
   return {
     mode: process.env.NODE_ENV || 'development',
-    entry: './server/src',
+    entry: './server/src/server.js',
     module: {
       rules: [
         {
@@ -41,7 +41,7 @@ const serverConfig = (env, argv) => {
 
 const clientConfig = {
     mode: process.env.NODE_ENV || 'development',
-    entry: './client/src/index.js',
+    entry: ['@babel/polyfill', './client/src/index.js'],
     devtool: 'inline-source-map',
     module: {
       rules: [

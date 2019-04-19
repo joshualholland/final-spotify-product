@@ -55,7 +55,7 @@ if (cluster.isMaster) {
     });
 } else {
     const app = express();
-    let p = join(__dirname, '../../client');
+    let p = join(__dirname, '../public');
     console.log(p);
     app.use(express.static(p));
     app.use(express.json());
@@ -78,10 +78,10 @@ if (cluster.isMaster) {
         .use(express.static(p))
 
     app.get('/', function (req, res) {
-        res.render(path.resolve(__dirname, '../client'));
+        res.render(path.resolve(__dirname, '../public'));
     });
 
-    app.use(express.static(__dirname + '/public'))
+    app.use(express.static(p))
         .use(cors())
         .use(cookieParser());
 
@@ -189,11 +189,10 @@ if (cluster.isMaster) {
 
 
     app.use('*', (req, res, next) => {
-        res.sendFile(join(__dirname, '../client/index.html'))
+        res.sendFile(join(__dirname, '../public/index.html'))
     });
 
     const port = process.env.PORT || 3000;
-    console.log(port)
     app.listen(port, () => {
         console.log(`Server listening on port: ${port}`);
     });

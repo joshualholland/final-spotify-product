@@ -2,12 +2,12 @@
   "name": "spotify",
   "version": "1.0.0",
   "description": "",
-  "main": "server/lib/index.js",
+  "main": "index.js",
   "scripts": {
     "watch:build": "npx webpack -w",
     "watch:server": "nodemon dist/server.js",
     "dev": "npm-run-all --parallel watch:*",
-    "start": "node dist/bundle.js",
+    "start": "node dist/server.js",
     "build": "npx webpack",
     "heroku-postbuild": "npm run build"
   },
@@ -18,7 +18,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/polyfill": "^7.2.5",
+    "@babel/polyfill": "^7.4.3",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
