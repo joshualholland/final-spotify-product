@@ -87,8 +87,8 @@ export default class Decades extends Component {
                         { label: "70's", y: this.state.decades.seventies },
                         { label: "80's", y: this.state.decades.eighties },
                         { label: "90's", y: this.state.decades.ninties },
-                        { label: "2000's", y: this.state.decades.twoThousands },
-                        { label: "2010's", y: this.state.decades.current }
+                        { label: "00's", y: this.state.decades.twoThousands },
+                        { label: "10's", y: this.state.decades.current }
                     ]
                 }
             ]
