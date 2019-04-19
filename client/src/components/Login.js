@@ -9,7 +9,7 @@ const Login = () => {
   let LOGIN_URI = ''
 
   if (process.env.NODE_ENV === 'production') {
-    LOGIN_URI = 'https://synethesiaspotify.herokuapp.com/login'
+    LOGIN_URI = 'https://synesthesiaspotify.herokuapp.com/login'
   } else {
     LOGIN_URI = 'http://localhost:3000/login'
   }
