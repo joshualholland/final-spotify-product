@@ -119,4 +119,12 @@ svg #path123 {
         width: 300px !important;
         height: auto;
     }
+
+    #wrapper {
+        display: none;
+    }
+
+    .me {
+        display: none;
+    }
 }
