@@ -127,4 +127,8 @@ svg #path123 {
     .me {
         display: none;
     }
+
+    footer {
+        width: 414px;
+    }
 }
